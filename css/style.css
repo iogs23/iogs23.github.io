@@ -1,0 +1,107 @@
+a {
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+nav {
+    background-color: #27343ba6;
+    padding:20px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+nav .menu{ 
+    float: right;    
+    margin-top: 25px;
+    
+}
+
+
+nav .menu li {
+    float: left;    
+}
+
+nav .menu li a{
+    padding: 15px;
+}
+nav .menu li a:hover{
+    background-color: #eb9100;
+}
+
+.menu li.dropDown{
+    position: relative;
+}
+.menu li.dropDown ul.subMenu{
+    position: absolute;
+    display: none;
+    background-color: #0000008e;
+    top: 30px;
+    left: -15px;
+    width: 100%;
+    padding: 15px;
+}
+
+.menu li.dropDown:hover ul.subMenu{
+    display: block;
+}
+.menu li.dropDown ul.subMenu li {
+    margin: 20px 0;
+    width: 100%;
+    
+}
+
+
+/* 關於我們 */
+
+.about-wrapper{
+    display: flex;
+    height: 600px;
+    border: 2px solid #160d0d;
+    
+}
+
+.about-item{   
+    flex: 1 0 300px;
+    background-size: cover;
+    transition: flex-basis 0.5s ease-out;
+
+}
+
+.about-item:hover{
+    flex-basis: 450px;
+    transition: flex-basis 0.5s ease-in;
+
+}
+
+.about-item:nth-child(1){
+    background-image: url("../img/about1.png");
+
+}
+.about-item:nth-child(2){
+    background-image: url("../img/about2.png");
+}
+.about-item:nth-child(3){
+    background-image: url("../img/about3.png");
+}
+.about-item:nth-child(4){
+    background-image: url("../img/about4.png");
+}
+
+footer {
+    background-color: #3d3d3d;
+    padding: 30px 100px;
+    overflow: hidden;
+}
+
+.footer-logo {
+    float: left;
+}
+.copy-right {
+    float: right;
+    color: #ffffff;
+    margin-top: 50px;
+   
+}
+
